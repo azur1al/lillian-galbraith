@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Georgia;
+  src: url(./fonts/alagard.ttf);
+}
+
+@font-face {
+  font-family: 'Handwriting';
+  src: url(./fonts/SpecialElite-Regular.ttf);
+}
+
+body {
+  font-family: 'Times New Roman';
+  font-weight: normal;
+  text-align: left;
+  font-size: 18;
+  color:rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-image: url(./images/background.jpg);
+  background-size: 20%;
+} 
+
+p{
+  font-family: 'Handwriting';
+  font-size: 15;
+}
+
+/* left headings */
+h2{
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 50;
+  text-align: center;
+  color: black;
+}
+
+/* right headings */
+h3{
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 35;
+  text-align: center;
+  color: black;
+}
+
+/* right subtitles */
+h4{
+  font-family: Georgia;
+  font-weight: normal;
+  text-align: center;
+  font-size: 28;
+  color: black;
+}
+
+h5{
+  font-family: 'Handwriting';
+  font-weight: normal;
+  text-align: center;
+  font-size: 13;
+  color: #455C85;
+}
+
+/* link formatting */
+#leftlink a {
+  color: black;
+}
+
+#rightlink a {
+  color: black;
+}
+
+/* Left side - Profile and Bio */
+.leftcolumn {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+
+/* right column */
+.rightcolumn {
+  float: right;
+  width: 70%;
+  padding-left: 20px;
+}
+
+/* left column boxes */
+.cardleft {
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin-bottom: 20px;
+  background-image: url(./images/background2.jpg);
+  background-size: 100%;
+}
+
+/* right column boxes */
+.cardright {
+  color:rgb(255, 255, 255);
+  padding: 20px;
+  margin-bottom: 20px;
+  background-image: url(./images/background2.jpg);
+  background-size: 100%;
+}
+
+/* clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* comment boxes */
+.comment-box,
+.post-comment .list {
+  font-family: 'Times New Roman';
+  font-weight: normal;
+  text-align: left;
+  color: black;
+  background-image: url(./images/background3.jpg);
+  background-size: 100%;
+  opacity: 70%;
+}
+
+.comment-session {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.post-comment .list {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.post-comment .comment-post {
+  padding: 15px 15px 15px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(178, 178, 178, 0.0);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
